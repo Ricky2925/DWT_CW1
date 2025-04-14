@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "SafeTravel",
+    "slug": "SafeTravel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMessagesUsageDescription": "需要短信权限发送安全通知"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "android": {
+        "permissions": [
+          "android.permission.SEND_SMS",
+          "android.permission.RECEIVE_SMS",
+          "android.permission.READ_SMS"
+        ],
+        "package": "com.yourcompany.safetravel"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
